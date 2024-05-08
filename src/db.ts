@@ -1,14 +1,12 @@
-import mongoose, { ConnectOptions } from 'mongoose';
 
+import mongoose from 'mongoose';
+import 'dotenv/config';
 
-
+const databaseUrl = process.env.DATABASE_URL as string;
+console.log(databaseUrl);
 export const connectToDatabase = () => {
-  const databaseUrl = "mongodb+srv://ulysses:sistema1@db.jljvffc.mongodb.net"; 
 
-
-  const connectOptions: ConnectOptions = {};
-
-  mongoose.connect(databaseUrl, connectOptions);
+  mongoose.connect(databaseUrl);
 
   mongoose.connection.on('connected', () => {
     console.log('Connected to MongoDB');
@@ -17,4 +15,4 @@ export const connectToDatabase = () => {
   mongoose.connection.on('error', (err) => {
     console.error('Error connecting to MongoDB:', err);
   });
-};
+}

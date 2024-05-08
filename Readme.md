@@ -22,8 +22,8 @@
 ### Configuração do Banco de Dados:
 
 1. **String de Conexão**:
-   - Abra o arquivo `src/db.ts`.
-   - Dentro deste arquivo, localize a variável `databaseUrl` e defina a string de conexão do seu banco de dados NoSQL MongoDB.
+   - Renomeia o arquivo `example.env`.
+   - Dentro do arquivo `example.env` cole string de conexão do seu banco.
 
 ### Execução da Aplicação:
 
