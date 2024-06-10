@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.ts"
   },
   "keywords": [],
-  "author": "Sabrina",
+  "author": "Ulysses",
   "license": "ISC",
   "dependencies": {
     "@types/cors": "^2.8.17",
