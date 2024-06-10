@@ -16,7 +16,7 @@
   },
   "include": [
     "src/**/*"
-  ],
+, "public"  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"

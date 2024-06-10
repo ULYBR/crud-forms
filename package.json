@@ -6,7 +6,7 @@
     "build": "tsc -p tsconfig.json && pnpm copy-public",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "copy-public": "copyfiles -u 1 src/public/* dist/"
+    "copy-public": "copyfiles -u 1 public/* dist/public"
   },
   "keywords": [],
   "author": "Ulysses",
