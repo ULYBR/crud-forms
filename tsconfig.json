@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist", // This line specifies the output directory
+    "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
       "*": [
