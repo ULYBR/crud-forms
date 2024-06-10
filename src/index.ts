@@ -1,9 +1,9 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import path from 'path';
-import { connectToDatabase } from './db'; 
+import { connectToDatabase } from './db';
 import mongoose, { Document } from 'mongoose';
-import { z } from 'zod'; 
+import { z } from 'zod';
 
 // Definindo o modelo de endereço
 interface Endereco {
@@ -124,8 +124,8 @@ app.delete('/pessoa/:id', async (req: Request, res: Response) => {
       return res.status(404).json({ message: 'Pessoa não encontrada' });
     }
 
-    
-    res.status(200).json({ message: 'Pessoa deletada com sucesso'});
+
+    res.status(200).json({ message: 'Pessoa deletada com sucesso' });
   } catch (error) {
     res.status(500).json({ message: 'Erro ao deletar pessoa' });
   }
@@ -135,7 +135,7 @@ app.delete('/pessoa/:id', async (req: Request, res: Response) => {
 app.put('/pessoa/:id', async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
-    const {email, nome, idade, endereco } = req.body;
+    const { email, nome, idade, endereco } = req.body;
     const pessoa = await PessoaModel.findByIdAndUpdate(id, {
       email,
       nome,
