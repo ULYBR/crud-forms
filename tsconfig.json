@@ -20,5 +20,14 @@
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
-  ]
+  ],
+  "copyFiles": {
+    "include": [
+      "src/public/*"
+    ],
+    "exclude": [
+      "**/*.ts"
+    ],
+    "flatten": false
+  }
 }
